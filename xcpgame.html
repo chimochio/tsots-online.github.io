@@ -1,0 +1,66 @@
+
+<html>
+<body background="cloud.jpg">
+=========chimochio Blue and You Gamble===========
+<br>
+CP Balance : <div id="result"></div>
+<br>
+<br>
+<br>
+Bet amount: <input id ="flipper"> <button type="button"  onclick="flip()">Gamble with Blue</button>
+
+
+
+
+<span id = "flipped"> </span>
+<br>
+  <br>
+  <br>
+<img src="wartortle.gif"  style="width:100px;height:108px;">
+     
+      &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp;
+ <img src="hellwell.gif"  style="width:150px;height:148px;">
+
+<script>
+var balance = parseInt(localStorage.clickcount)
+
+document.getElementById('result').innerHTML = parseInt(localStorage.clickcount)
+var flipped = undefined;
+var bet = 0;
+
+
+function flip(){
+
+bet = document.getElementById('flipper').value
+
+
+flipped = Math.floor(Math.random()*2);
+console.log(flipped + "random")
+
+if(bet < balance){
+
+  if(flipped == 0){
+alert('BLUE AND YOU WIN!');
+balance = Number(balance) + Number(bet);
+
+localStorage.clickcount = balance
+
+document.getElementById('result').innerHTML = parseInt(localStorage.clickcount)
+flipped = undefined;
+  }
+  if(flipped == 1){
+alert('BLUE AND YOU LOST!');
+balance = Number(balance) - Number(bet);
+
+
+localStorage.clickcount = balance;
+
+document.getElementById('result').innerHTML = parseInt(localStorage.clickcount)
+flipped = undefined;
+  }
+
+}else{ alert('you dont have enough cp!')}
+}
+</script>
+
+<html>

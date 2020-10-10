@@ -1,0 +1,57 @@
+
+<html>
+
+<button id = "firstTime" onclick = "firstTime();" > first time </button>
+<br>
+
+<span id = "rowOne"> </span>
+<br>
+
+<button id = "secondTime" onclick = "secondTime();"> second time </button>
+<br>
+
+<span id = "rowTwo" ></span>
+<br>
+
+<button id = "remainder" onclick = "doMath();"> get remainder</button>
+<br>
+
+<span id = "rowThree"></span>
+<br>
+
+
+<script>
+console.log('in script')
+
+function firstTime(){
+  console.log('in function ')
+var ft = new Date().getTime();
+  localStorage.firstDate = ft;
+  document.getElementById('rowOne').innerHTML = ft;
+};
+
+
+function secondTime(){
+  console.log('in function 2')
+var st = new Date().getTime();
+  localStorage.secondDate = st;
+  document.getElementById('rowTwo').innerHTML = st;
+
+};
+
+function doMath(){
+  var mathmat = parseInt(localStorage.secondDate)-  parseInt(localStorage.firstDate)
+document.getElementById('rowThree').innerHTML = mathmat;
+if( mathmat > 5000){
+alert('its time')}
+else{ alert('its not time yet!')};
+
+};
+
+
+
+
+</script>
+
+
+</html>
