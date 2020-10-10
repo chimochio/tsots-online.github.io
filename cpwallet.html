@@ -1,0 +1,106 @@
+
+<html>
+<meta http-equiv="refresh" content="5" >
+
+CP Balance : <div id="result"></div>
+
+<p><button onclick="clickCounter()" type="button">Add Point</button></p>
+
+
+<script>
+
+document.getElementById("result").innerHTML = localStorage.clickcount + " chimoPoint(s)";
+
+
+
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+            location.reload();
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = localStorage.clickcount + " chimoPoint(s)";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
+
+
+<!-- Then you have to fire it up when the input changes with onchange: -->
+
+how much cpMini u want? <input type="number" id="iv" name="iv" onchange="XX()">
+<br>
+
+CP-miniprice :   <div id ="case"> </div>
+
+Cp Mini Grand Total : <p id = "grandTotal"> </p>
+
+<script>
+document.getElementById('grandTotal').innerHTML = localStorage.grandTotal
+
+var miniprice = parseInt(localStorage.clickcount) / 5 ;
+console.log(miniprice)
+  document.getElementById("case").innerHTML = miniprice + " chimoPoint(s)"
+
+    function XX()
+
+
+    {
+      if(localStorage.first){
+
+        var newInput =  document.getElementById("iv").value;
+
+
+console.log(newInput)
+
+console.log(parseInt(localStorage.grandTotal) + parseInt(newInput));
+
+grandTotal = parseInt(localStorage.grandTotal) + parseInt(newInput);
+
+document.getElementById('grandTotal').innerHTML = grandTotal;
+console.log('totaled')
+
+localStorage.setItem('grandTotal', grandTotal)
+
+cpb = Number(localStorage.clickcount) - miniprice ;
+
+document.getElementById("result").innerHTML = cpb;
+
+localStorage.globalTotal = cpb ;
+location.reload();
+
+      }
+      if(!localStorage.first){
+
+        console.log(" not, the logical operand worked, you have no .name in local storage")
+
+      // the input from html 2 js
+        var firstone = document.getElementById("iv").value;
+
+localStorage.setItem('first', firstone);
+
+        // the output to html
+        document.getElementById("case").innerHTML = firstone
+
+        console.log(localStorage.first + ' heyman');
+
+
+        var grandTotal = firstone
+
+        document.getElementById('grandTotal').innerHTML = grandTotal;
+
+        localStorage.setItem('grandTotal', grandTotal)
+
+location.reload();
+
+
+  }
+
+
+}
+
+</script>
+</html>

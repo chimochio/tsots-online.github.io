@@ -1,0 +1,129 @@
+
+<html>
+
+<head>
+
+    <title>DIAMONDS</title>
+
+
+
+    <style>
+        body {
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        p, a {
+            color: pink;
+            font-weight: 12px;
+        }
+
+        .title {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        #machine {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body background="cloud.jpg">
+
+<p class="title">
+  <><><>  Chimochio Diamonds Slots <><><>
+</p>
+<br>
+<><><><><><><>DIAMONDS JACKPOT = 100 CP!<><><><><> <br>
+
+<div id="machine">
+    <svg width="550" height="250" viewBox="0 0 1600 500">
+
+    <rect x="0" y="10" width="500" height="500" fill="white" stroke="lightblue" stroke-width="10">
+    </rect>
+
+    <rect x="550" y="10" width="500" height="500" fill="white" stroke="lightblue" stroke-width="10">
+    </rect>
+
+    <rect x="1100" y="10" width="500" height="500" fill="white" stroke="lightblue" stroke-width="10">
+    </rect>
+
+    <text x="100" y="415" font-family="Comic Sans MS" font-size="500" fill="silver" id="first">
+    <>
+    </text>
+
+    <text x="650" y="415" font-family="Comic Sans MS" font-size="500" fill="silver" id ="second">
+    <>
+    </text>
+
+    <text x="1200" y="415" font-family="Comic Sans MS" font-size="500" fill="silver" id="third">
+    <>
+    </text>
+    </svg>
+</div>
+
+
+<p>
+    <input type="button" value="SPIN &nbsp; -1cp" onClick="refresh()">
+</p>
+        <br>
+
+
+BALANCE:
+<p id="result">0</p>
+
+<p id="messages"></p>
+
+
+<script>
+
+var balance = parseInt(localStorage.clickcount)
+document.getElementById('result').innerHTML = balance;
+
+var jackpot = 100;
+
+
+
+    var sound = new Audio("winner.wav");
+
+
+
+    function write_message( $message ) {
+        document.getElementById('messages').innerHTML = $message;
+    }
+
+    function refresh()
+    {
+        if ( parseInt(localStorage.clickcount) > 0 ) {
+
+          balance = balance - 1;
+          localStorage.clickcount = balance ;
+            document.getElementById('result').innerHTML = balance;
+            var one = Math.floor((Math.random()*9)+1);
+            var two = Math.floor((Math.random()*9)+1);
+            var three = Math.floor((Math.random()*9)+1);
+
+            document.getElementById('first').innerHTML = one;
+            document.getElementById('second').innerHTML = two;
+            document.getElementById('third').innerHTML = three;
+
+            if ( one == two && two == three && three == one) {
+                write_message( 'JACKPOT! +100 cp' );
+              balance = balance + 100;
+              
+              document.getElementById("result").innerHTML = balance;
+              localStorage.clickcount = balance ;
+            } else {
+                write_message( 'wasted try...' );
+            }
+        } else {
+            write_message( 'I need CP to give you fun!' );
+        }
+    }
+
+
+</script>
+
+
+        </html>
