@@ -1,0 +1,91 @@
+<html>
+
+    <a href="/index2">faucet : time left___</a> &nbsp; <a href="/index2">new game </a>  &nbsp; <a href="/index2">withdrawl </a> &nbsp; <a href="/index2">deposit</a> 	&nbsp;   <a href="/index2">advertise here</a>  	&nbsp;
+    
+<h1>
+ An online cryptocoin faucet and game of chance.<br>
+    Paper rock scissors rules. 
+   
+    
+    <!-- later we can make this multiplayer , prove out concept first and get it funcitoning house always wins algo, real profit from add dollars. 1/3 odds every time.  -->
+    <!-- just wanna do this as a coding challenge , and incrementally improve it , since the idea is so simple and scaleable -->
+    
+    <!-- https://rockpaperscissorslizardspock.github.io/   // as an example -->
+</h1>
+
+    <p>BITCOIN (paper) </p>
+    
+    
+     <img src="btc.jpg"height="75" width="75" onclick="roll();document.getElementById('btcCounts').innerHTML = result;">
+
+<p id="btcCounts"></p>
+
+    <br>
+    
+    <h2> BTC BANK =____  DOGE BET = ____  </h2>
+    
+ <p id= "rich"></p>
+    
+     <p>ETHEREUM (rock) </p>
+    
+    
+     <img src="eth.jpg"height="75" width="87" onclick="roll();document.getElementById('ethCounts').innerHTML = result;">
+
+<p id="ethCounts"></p>
+
+    <br>
+    
+    <h2> BET BANK =____  ETH BET = ____   ODDS = ____% </h2>
+
+    
+    
+
+    
+    
+    <p> DOGECOIN (Sciccors)</p>
+ <img src="doge.jpg"height="75" width="75" onclick="roll();document.getElementById('whatCounts').innerHTML = result;">
+
+<p id="whatCounts"></p>
+
+    
+    <br>
+    
+    <h2> DOGE BANK =____  DOGE BET = ____  </h2>
+    
+   
+    
+<script type="text/javascript">
+var i = 1;
+var j = 1;
+    var m = 1;
+var k = Math.floor(Math.random()*3);;
+    var result = "";
+
+
+function iHelp(){
+    if(k = 1 ) {
+        console.log('paper');
+        result = "Bitcoin";
+        return result
+    }
+   else if(k = 2 ){
+       console.log('rock){
+       result = "Ethereum";
+        return result}
+                   else (k = 3 ){
+       console.log('scissors');
+        result = "Doge Coin"};
+        
+};
+};
+    
+//Math.floor(Math.random()*100);   // 1-100 randomizer for coin betting game.
+
+</script>
+
+
+</html>
+
+
+
+

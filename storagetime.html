@@ -1,0 +1,85 @@
+
+
+<html>
+
+
+    Download in <span id="countdown" style="font-weight: bold;"></span> Seconds
+
+
+<script>
+
+var ticker = null;
+
+var alarmAt = 0;
+
+
+function CountDown(tickNotify, fireAction) {
+
+
+    function now() {
+
+      return new Date().getTime();
+
+    };
+
+
+
+function fire() {
+
+        if (ticker) {
+
+            clearInterval(ticker);
+
+            ticker = null;
+
+            alarmAt = now();
+
+        }
+
+
+    }
+
+  function tick() {
+
+        var diff = Math.round((alarmAt - now()) / 1000);
+
+        var secs = diff<0 ? 0 : diff;
+
+        tickNotify(secs);
+
+        if (secs==0) { fire(); }
+
+    }
+
+
+
+    this.start = function(secs) {
+
+        alarmAt = now() + (1000 * secs);
+
+
+
+            if (!localStorage.alarmAt || (now() >= localStorage.alarmAt)) { localStorage.alarmAt = alarmAt; }
+
+            alarmAt = localStorage.alarmAt;
+
+        }
+
+        ticker = setInterval(tick, 1000);
+
+    }
+///// function end
+
+
+var countDown = new CountDown(
+
+        function(secs) { document.getElementById("countdown").innerHTML = secs; })
+
+
+countDown.start(100);
+
+</script>
+
+
+
+</html>

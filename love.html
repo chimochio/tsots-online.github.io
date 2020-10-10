@@ -1,0 +1,67 @@
+<html>
+    <head>
+    
+     <script src = "jquery-3.1.1.js" ></script>
+    
+        <script>
+    function mouseHit() {
+        var colors = ["black", "blue", "red", "yellow", "orange"];
+        var color = colors[Math.floor((Math.random()*5))];
+    var coords = new Array(10, 50 , 100 , 130 , 175, 225, 260, 300, 320, 350);
+    var x = coords[Math.floor((Math.random()*10))];
+    var y = coords[Math.floor((Math.random()*10))];
+    $("#elusiveText").css({"top" : y + "px", "left" : x + "px", "background-color": color})
+    }
+
+    function mouseHit2() {
+        var colors = ["black", "blue", "red", "yellow", "orange"];
+        var color = colors[Math.floor((Math.random()*5))];
+    var coords = new Array(10, 50 , 100 , 130 , 175, 225, 260, 300, 320, 350);
+    var x = coords[Math.floor((Math.random()*10))];
+    var y = coords[Math.floor((Math.random()*10))];
+    $("#elusiveText2").css({"top" : y + "px", "left" : x + "px", "background-color": color})
+    }
+
+
+
+    
+    </script>
+ <style>
+    
+    span{
+        background-color: silver;
+        color: gold;
+            font-weight : bold;
+        border-color : cornsilk;
+        border:2px solid;
+        border-radius: 5px;
+        padding: 3 px ;
+        position :absolute;
+        top : 150px;
+        left: 100px;
+        
+    }
+     
+      span2{
+        background-color: silver;
+        color: gold;
+            font-weight : bold;
+        border-color : cornsilk;
+        border:2px solid;
+        border-radius: 5px;
+        padding: 3 px ;
+        position :absolute;
+        top : 350px;
+        left: 300px;
+        
+    }
+     
+    </style>
+        </head>
+    <body>
+    
+    <span id = "elusiveText" onmouseover="mouseHit()"> Click Me! </span>
+        
+        <span2 id = "elusiveText2" onmouseover= "mouseHit2()">click me 2! </span2>
+</body>
+</html>

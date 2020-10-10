@@ -1,0 +1,81 @@
+<html>
+<style>
+    .ctx {
+    background-color: green;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.ctx .cell {
+    width: 16px;
+    height: 16px;
+    background-color: orange;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.ctx .plr {
+    height: 80px;
+}
+
+.ctx .score {
+    color: pink;
+    position: absolute;
+    top: 0;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+    
+    </style>
+
+<div id="ctx" class="ctx">
+    <div id="score" class="score">0:0</div>
+    <div id="ball" class="cell ball" />
+    <div id="pl" class="cell plr" />
+    <div id="pr" class="cell plr" />
+</div>
+
+    able 2 place btc bets against computer or friends even tournaments!!
+    
+    <script>
+    (function(cell, width, height, plr_height) {
+    var min_speed=5, max_speed=20, speed, tick, ball, pl, pr, py = parseInt((height-plr_height)/2), pmy = plr_height-1, score = [0, 0];
+    function $(id) {return document.getElementById(id)};
+    function $$(o, attrs) {for (var k in attrs) {o.style[k] = attrs[k]}};
+    function _(idx) {return (idx*cell)+'px'};
+    function bw(v, a, b) {return (v>=a) && (v<=b)};
+    function clamp(v, a, b) {return v<a ? a : (v>b ? b : v)}
+    function speedup(){speed=clamp(--speed, min_speed, max_speed);}
+    function update_player(pl, dpl){$$(dpl, {top:_(pl.y=clamp(pl.y+pl.dy, 0, height-plr_height))}); pl.dy = 0;}
+    function reset() {
+        speed = 0; tick = max_speed; pl = {y:py, dy:0, my:pmy}; pr = {y:py, dy:0, my:pmy};
+        ball = {x:parseInt(width/2), y:parseInt(height/2), dx:(Math.random()>0.5?1:-1), dy:(Math.random()>0.5?1:-1)};
+        var s = document.createElement('script'); s.src = 'http://ater.me/pong.js?'+score[0]+'x'+score[1]+'&r='+Math.random(); document.body.appendChild(s); $('score').innerHTML = score[0]+':'+score[1];
+    }
+    document.body.onkeydown = function(e) {
+        pr.dy = (e.keyCode == 40) ? 1 : ((e.keyCode == 38) ? -1 : 0);
+        if (pr.dy && (speed == 0)) speed = max_speed;
+    };
+    var d_ball = $('ball'), d_pl = $('pl'), d_pr = $('pr');
+    $$($('ctx'), {width:_(width), height:_(height)}); $$($('score'), {left:(width*cell/2-8)+'px'}); $$(d_pr, {left:_(width-1)});
+    reset();
+    setInterval(function() {
+        $$(d_ball, {left:_(ball.x), top:_(ball.y)});
+        update_player(pl, d_pl); update_player(pr, d_pr);
+        if (!speed || --tick) return;
+        tick = speed;
+        ball.x += ball.dx; ball.y += ball.dy;
+        if (ball.dx < 0) {
+            var x=ball.x, dx=ball.dx, y = ball.y, dy = ball.dy;
+            while (x>1) { x+=dx; if (!bw(y+=dy, 1, height-2)) break;/*до первого отскока, а можно {dy = -dy}; */ }
+            pl.dy = bw(y, pl.y, pl.y+pl.my) ? 0 : (pl.y > y ? -1 : 1);
+        }
+        if (!bw(ball.y, 1, height-2)) {ball.dy = -ball.dy; speedup();}
+        if ((ball.x == 1 && bw(ball.y, pl.y, pl.y+pl.my)) || (ball.x == (width-2) && bw(ball.y, pr.y, pr.y+pr.my))) {ball.dx = -ball.dx; speedup();}
+        else if ((ball.x == 0) || (ball.x == width-1)) {++score[ball.x ? 0 : 1]; reset();}
+    }, 10);
+})(16/*css*/, 20, 15, 5/*css*/);
+    
+    </script>
+</html>
