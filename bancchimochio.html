@@ -1,0 +1,259 @@
+<html>
+<body background="cloud.jpg">
+
+ ========== BANC CHIMOCHIO========== <br>
+
+ChimochioPoint Balance : <div id="result"></div>
+<br>
+
+
+mini points : <div id = miniPoints ></div>
+
+
+<p><button onclick="clickCounter()" type="button">Add CPoint</button></p>
+
+
+100 Free cp in <span id="countdown" style="font-weight: bold;"></span> Seconds
+
+<a id = "renew" onclick = "add();"> </a>
+
+<br> <br>
+how much CPmini do you want to buy? <input id ="iv"> <button type="button"  onclick="button()">Mini</button>
+
+<br><br>
+
+minipoint spot price :  <span id = cost > </span> chimoPoint(s)<br>
+
+
+
+<br>
+<br>
+<img src="https://www.paypal.com/en_US/i/logo/PayPal_mark_37x23.gif" align="left" style="margin-right:7px;"><span style="font-size:11px; font-family: Arial, Verdana;">The safer, easier way to pay.</span>
+Buy chimoPoints :<br>
+Exchange cp for dollars : <br>
+<br>
+ <br>
+ <br>
+<br>
+
+
+<script>
+console.log('script is entereed');
+
+console.log(localStorage.miniPoints + "this is minipoint storage")
+
+
+var balance = undefined;
+
+var miniPoints = undefined;
+
+
+if(!localStorage.clickcount){
+
+balance = 0    // starting && final balance
+}
+
+if(localStorage.clickcount){
+
+  balance = parseInt(localStorage.clickcount);
+};
+
+
+document.getElementById('result').innerHTML = balance ;
+
+
+/////
+
+
+console.log(localStorage.miniPoints + "pre mini");
+
+if(!localStorage.miniPoints){
+  miniPoints = 0
+  localStorage.miniPoints = 0
+}
+if(localStorage.miniPoints){
+
+  document.getElementById('miniPoints').innerHTML = parseInt(localStorage.miniPoints) ;
+}
+
+console.log(localStorage.miniPoints +  'post mini');
+
+
+
+
+var cost = .0523 ; // cost
+
+var owned = 0 ; // amount bought
+
+document.getElementById('cost').innerHTML = cost;
+
+console.log( "cost script reached");
+
+function clickCounterSixty(){
+ //
+ console.log('give me pionts equal to 60 minutes but not more than 60 points button');
+}
+
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = localStorage.clickcount + " chimoPoint(s)";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+
+
+
+var money = localStorage.clickcount
+console.log (money + 'money')
+var ticker = null;
+
+var alarmAt = 0;
+
+var claimed = false;
+
+
+function CountDown(tickNotify, fireAction) {
+
+
+    function now() {
+
+      return new Date().getTime();
+
+    };
+
+
+
+function fire() {
+
+        if (ticker) {
+
+            clearInterval(ticker);
+
+            ticker = null;
+
+            alarmAt = now();
+
+        }
+
+
+    }
+
+  function tick() {
+
+        var diff = Math.round((alarmAt - now()) / 1000);
+
+        var secs = diff<0 ? 0 : diff;
+
+        tickNotify(secs);
+
+        if (secs==0) { console.log('sex == 0'); fire(); document.getElementById("renew").innerHTML = "<button> click me </button>" }
+
+    }
+
+
+
+    this.start = function(secs) {
+
+        alarmAt = now() + (1000 * secs);
+
+
+
+            if (!localStorage.alarmAt || (now() >= localStorage.alarmAt)) { localStorage.alarmAt = alarmAt; }
+
+            alarmAt = localStorage.alarmAt;
+
+        }
+
+        ticker = setInterval(tick, 1000);
+
+    }
+///// function end
+
+
+var countDown = new CountDown(
+
+        function(secs) { document.getElementById("countdown").innerHTML = secs; });
+
+
+function add(){
+  if (localStorage.clickcount) {
+    console.log(localStorage.clickcount);
+  localStorage.clickcount = parseInt(localStorage.clickcount) + parseInt(100)
+  console.log(localStorage.clickcount)
+  } else {
+      localStorage.clickcount = 100;
+  }
+  document.getElementById("result").innerHTML = localStorage.clickcount + " chimoPoint(s)";
+document.getElementById("renew").innerHTML = "Free cp claimed";
+
+};
+
+countDown.start(100);
+
+
+
+
+/// switcharooo
+function button(){
+
+var userInput =  document.getElementById("iv").value;
+console.log('user imput recieved' + userInput);
+
+var multipleCost = userInput * cost;
+
+
+console.log( 'multiplecost = ' + multipleCost);
+
+
+ var remain =  Number(localStorage.clickcount) - multipleCost
+
+ console.log(remain + ' is our remainder');
+
+ var question = confirm('your total is '+ multipleCost + "is that okay");
+ if(question == true) {
+
+
+   localStorage.clickcount = remain ;
+
+
+document.getElementById("result").innerHTML = localStorage.clickcount
+
+
+     alert(question);
+
+
+miniMath =  parseInt(localStorage.miniPoints) + parseInt(userInput);
+
+console.log(miniMath + "your mini math");
+
+document.getElementById("miniPoints").innerHTML = miniMath
+
+localStorage.miniPoints = miniMath
+
+
+
+console.log(true)
+
+ } else {
+     alert(question);
+ }
+}
+
+ /// keeps track and public record
+ // of how much money ppl put in,
+ // and how much chimo loses
+ // and how much chimo starts with
+ // so we can know how to maximize profits, heuristics.
+ // sell stock   'chimochio . 1billion penny   stocks ,on the webazaarus office business.
+ //
+</script>
+</body>
+
+<html>
+

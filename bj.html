@@ -1,0 +1,438 @@
+<html>
+<style>
+    
+    body {
+    font-family:sans-serif;
+    padding:1em;
+}
+#yourHand {
+    overflow:hidden;
+    position:relative;
+    border:1px solid #056B42;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    background: #287B59;
+    color:#69D1A7;
+    padding:.5em;
+    font-size:1.1em;
+    height:6em;
+    width:25em;
+}
+.card {
+  background:#fff;
+  border: 1px solid gray;
+  border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+  -moz-box-shadow:0 2px 2px 1px #999;
+    -webkit-box-shadow:0px 2px 2px 1px #999;
+    box-shadow:0 2px 2px 1px #999;
+  font-size: 20pt;
+  float: left;
+  width:  3.75em;
+  height: 5em;
+  padding:.1em;
+  margin-right:-1em;
+ font-family:serif;
+}
+.card:first-child {margin-left:0;}
+
+.Spades, .Clubs {color:black}
+.Diamonds, .Hearts {color:red}
+
+#deal {
+    -moz-box-shadow:inset 0px -1px 4px 3px #9f71d1;
+    -webkit-box-shadow:inset 0px -1px 4px 3px #9f71d1;
+    box-shadow:inset 0px -1px 4px 3px #9f71d1;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9f71d1), color-stop(1, #3a096a) );
+    background:-moz-linear-gradient( center top, #9f71d1 5%, #3a096a 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9f71d1', endColorstr='#3a096a');
+    background-color:#9f71d1;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #3a096a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:7px 13px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #3a096a;
+}
+#deal:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3a096a), color-stop(1, #9f71d1) );
+    background:-moz-linear-gradient( center top, #3a096a 5%, #9f71d1 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a096a', endColorstr='#9f71d1');
+    background-color:#3a096a;
+}
+
+#hitMe {
+    -moz-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    -webkit-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #10a469), color-stop(1, #056b42) );
+    background:-moz-linear-gradient( center top, #10a469 5%, #056b42 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#10a469', endColorstr='#056b42');
+    background-color:#10a469;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #287b58;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:7px 13px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #287b58;
+}
+#hitMe:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #056b42), color-stop(1, #10a469) );
+    background:-moz-linear-gradient( center top, #056b42 5%, #10a469 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#056b42', endColorstr='#10a469');
+    background-color:#056b42;
+}
+#hitMe:active {
+    position:relative;
+    top:1px;
+}
+#stand {
+    -moz-box-shadow:inset 0px -1px 4px 3px #f8ac7d;
+    -webkit-box-shadow:inset 0px -1px 4px 3px #f8ac7d;
+    box-shadow:inset 0px -1px 4px 3px #f8ac7d;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f89350), color-stop(1, #f16e17) );
+    background:-moz-linear-gradient( center top, #f89350 5%, #f16e17 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f89350', endColorstr='#f16e17');
+    background-color:#f89350;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #b5693a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:7px 13px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #9d4307;
+}
+#stand:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f16e17), color-stop(1, #f89350) );
+    background:-moz-linear-gradient( center top, #f16e17 5%, #f89350 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16e17', endColorstr='#f89350');
+    background-color:#f16e17;
+}
+#stand:active {
+    position:relative;
+    top:1px;
+}
+
+#hitMe, #stand {display:none;}
+#yourScore .digits {font-weight:700}
+#wins {color:#056B42;}
+#losses {color:#F16D17;}
+
+    </style>
+
+<div id="dealerHand"></div>
+<div id="yourHand"></div>
+<div id="yourScore">Your Score: <span class="digits">0</span> Record: <span id="wins">0</span>&nbsp;/&nbsp;<span id="losses">0</span></div>
+<button id="deal">Deal</button>
+<button id="hitMe">Hit</button>
+<button id="stand">Stand</button>
+    
+    
+    
+    
+    <script>
+    
+    /** @constructor */
+var Card = function (suit, number){
+    /** @returns {Number} The number of the card in the deck. (1-52) */
+    this.getNumber = function (){
+        return number;  
+    };
+    /** @returns {String} The name of the suit. "Hearts","Clubs","Spades", or "Diamonds." */
+    this.getSuit = function (){
+        var suitName = '';
+        switch (suit){
+            case 1:
+                suitName = "Hearts";
+                break;
+            case 2:
+                suitName = "Clubs";
+                break; 
+            case 3:
+                suitName = "Spades";
+                break; 
+            case 4:
+                suitName = "Diamonds";
+                break;                
+        }
+        return suitName;
+    };
+    /** @returns {String} The HTML-encoded symbol of the suit. */
+    this.getSymbol = function (){
+        var suitName = '';
+        switch (suit){
+            case 1:
+                suitName = "&hearts;";
+                break;
+            case 2:
+                suitName = "&clubs;";
+                break; 
+            case 3:
+                suitName = "&spades;";
+                break; 
+            case 4:
+                suitName = "&diams;";
+                break;                
+        }
+        return suitName;
+    };
+    /** @returns {Number} The value of the card for scoring. */
+    this.getValue = function (){
+        var value = number;
+        if (number >= 10){
+            value = 10;
+        }
+        if(number === 1) {
+            value = 11;
+        }
+        return value;
+    };
+    /** @returns {String} The full name of the card. "Ace of Spades" */
+    this.getName = function (){
+        var cardName = '';
+        switch (number){
+            case 1:
+                cardName = "A";
+                break;
+            case 13:
+                cardName = "K";
+                break;
+            case 12:
+               cardName = "Q";
+                break;
+            case 11:
+                cardName = "J";
+                break;
+            default:
+                cardName = number;
+                break;
+        }
+        return cardName+this.getSymbol();
+    };
+};
+/** @constructor */
+var Deck = function (){
+    var cards = [];
+    /** Creates a new set of cards. */
+    var newCards = function (){
+        var i,
+            suit,
+            number;
+        for (i=0;i<52;i++){
+            suit = i%4+1;
+            number = i%13+1;
+            cards.push(new Card(suit,number));
+        }
+    };
+    /* Create those new cards. */
+    newCards();
+    /** Shuffles the cards. Modifies the private instance of the cards array.
+     * @returns {Array} An array of Cards representing the shuffled version of the deck.
+     */
+    this.shuffle = function (){
+        for(var j, x, i = cards.length; i; j = parseInt(Math.random() * i), x = cards[--i], cards[i] = cards[j], cards[j] = x);
+        return this.getCards();
+    };
+    /** @returns {Array} An array of cards representing the Deck. */
+    this.getCards = function (){
+        return cards;
+    };
+    /** @returns {Card} Deals the top card off the deck. Removes it from the Deck. */
+    this.deal = function (){
+        if (!cards.length){
+            console.log("Ran out of cards, new deck");
+            newCards();
+            this.shuffle();
+        }
+        return cards.pop();
+    };
+};
+/** @constructor */
+var Hand = function (deck){
+    var cards = [];
+
+    /* Deal two cards to begin. */
+    cards.push( deck.deal(), deck.deal());
+    /** @returns {Array} The array of Cards representing the Hand. */
+    this.getHand = function (){
+        return cards;
+    };
+    /** @returns {Number} The score of the Hand. */
+    this.score = function (){
+        var i,
+            score = 0,
+            cardVal = 0, // Stashing the Card's value
+            aces = 0; // Stores the # of Aces in the Hand
+        
+        for (i=0;i<cards.length;i++){
+            cardVal = cards[i].getValue();
+            if (cardVal == 11) {
+                aces += 1;
+            }
+            score += cardVal;
+        }
+        /* Check to see if Aces should be 1 or 11 */
+        while (score > 21 && aces > 0){
+            score -= 10;
+            aces -=1;
+        }
+        return score;
+    };
+    /** @returns {String} Comma separated list of Card names in the Hand. */
+    this.printHand = function (){
+        var arrayOut = [],
+            i;
+
+        for (i=0;i<cards.length;i++){
+            arrayOut.push(cards[i].getName());
+        }
+        return arrayOut.join();
+    };
+    /** Adds a Card from the Deck into the Hand. */
+    this.hitMe = function (){
+        if (cards.length < 5){
+            cards.push(deck.deal());
+        }
+    };
+    /** @returns {String} HTML representation of the Cards in the Hand. */
+    this.toHtml = function (){
+        var arrayOut = [],
+            i;
+
+        for (i=0;i<cards.length;i++){
+            arrayOut.push('<div class="card ',cards[i].getSuit(),' ',cards[i].getNumber(),'">',cards[i].getName(),'</div>');
+        }
+        return arrayOut.join('');
+    };
+};
+
+/** Play BLACKJACK! */
+(function (){
+    /* Set up our Game's Deck */
+    var deck = new Deck();
+
+    /* win/lose ratio */
+    var wins = 0;
+    var losses = 0;
+
+    /** Tally the score to determine the outcome. */
+    var declareWinner = function (userHand, dealerHand){
+        var outcome = '',
+            dealerScore = dealerHand.score(),
+            userScore = userHand.score();
+ 
+        /* I didn't make the rules, I just enforce them. */
+        if (userScore > 21 || dealerScore === 21){
+            outcome = "You lose!";
+            losses++;
+        }else if (userScore <= 21 && userHand.getHand().length >=5){
+            outcome = "You win! 5-card Charlie!";
+            wins++;
+        }else if (dealerScore > 21 || userScore === 21 || userScore > dealerHand.score()){
+            outcome = "You win!";
+            wins++;
+        }else if (dealerScore > userScore){
+            outcome = "You lose!";
+            losses++;
+        }else if (dealerScore === userScore){
+            outcome = "You tied!";
+        }
+        /* Output the result of the round. */
+        return outcome+"<br />Dealer: "+dealerHand.score()+"<br />You: "+userScore;
+    };
+
+    /** That bastard, the dealer */
+    var dealerHand = function (){
+        var hand = new Hand(deck);
+
+        while (hand.score() < 17){
+            hand.hitMe();
+        }
+        return hand;
+    };
+
+    /** Holds your Hand */
+    var yourHand;
+
+    /* CACHE SELECTORS!!! */
+    var $hitButton = $("#hitMe"),
+        $standButton = $("#stand"),
+        $dealButton = $("#deal"),
+        $score = $("#yourScore"),
+        $yourHand = $('#yourHand'),
+        $dealerHand = $('#dealerHand');
+
+    /** Show the Deal button, hide others. */
+    var showDeal = function (){
+        $hitButton.hide();
+        $standButton.hide();
+        //$score.hide();
+        $dealButton.show();
+    };
+
+    /** Show the control buttons, hide Deal. */
+    var showControls = function (){
+        $hitButton.show();
+        $standButton.show();
+       // $score.show();
+        $dealButton.hide();
+    };
+
+    /** Update your score and card display. */
+    var updateUI = function (){
+        /* Cards */
+        $yourHand.html(yourHand.toHtml());
+        /* Score */
+        $score.find(".digits").html(yourHand.score());
+        $("#wins").text(wins);
+        $("#losses").text(losses);
+    };
+
+    /* Deal Button */
+    $dealButton.on('click', function (){
+        yourHand = new Hand(deck);
+        updateUI();
+        showControls();
+    });
+
+    /* Hit Button */
+    $hitButton.on('click', function (){
+        yourHand.hitMe();
+        if (yourHand.getHand().length >= 5 || yourHand.score() > 21){
+            $standButton.trigger('click');
+        }else{
+            updateUI();
+        }
+    });
+
+    /* Stand Button */
+    $standButton.on('click', function (){
+        $yourHand.html(declareWinner(yourHand, dealerHand()));
+        showDeal();
+    });
+
+    /* Make sure to shuffle. */
+    deck.shuffle();
+}());
+    </script>
+
+</html>
