@@ -1,0 +1,83 @@
+
+<!-- there needs 2 be a transaxction array when u make the new REAL FUNCTIONAL BLOCKCHAIN cuz were gonna put transactions in it ....) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         
+      .card {
+    font-family     : Arial;
+    text-align      : center;
+    width           : min-content;
+    height          : auto;
+    background      : #ccc;
+    border          : 1px solid #000;
+    box-shadow      : 1px 1px 5px -1px #000;
+    padding         : 10px;
+    margin-bottom   : 10px;
+    cursor          : pointer;
+}
+
+.card:hover {
+    text-decoration : underline;   
+}
+    /* EOS */
+  </style>
+
+</head>
+<body background="../cloud.jpg">
+    <!-- At one point where you want to generate the cards you put this container -->
+<div id="container"></div>
+    <script type="text/javascript">
+        // Supposing you already have queried the API and have your data
+    let data = [
+        {name: 'name0', description: 'description', date: 'XX/XX/XXXX'},
+        {name: 'name1', description: 'description', date: 'XX/XX/XXXX'},
+        {name: 'name2', description: 'description', date: 'XX/XX/XXXX'},
+    ]
+
+node = {
+
+  //genesisHash : 'genesisHash' + this.keyMade,
+
+hash : '0000000000000000000000000000000000000000000000000000000000000000' ,
+
+  timeStamp : new Date(),
+  minable : 100000000,   // 100 million
+  count : 0,
+  //nonce : '',
+  difficulty : 10,          // 10:1 chance
+  coinbase : ' ',
+  owner : '', //this.userService.userObject.uid,
+  notes : 'this is the genesis hash. ',
+  smartContract : 'empty',
+tx : [],
+ // merkleRoot : this.realSha256
+  }
+
+
+
+    data.forEach(res => {
+        let card = document.createElement("div");
+card.className = "card";
+
+        let name = document.createTextNode('Name:' + res.name + ', ');
+        card.appendChild(name);
+
+        let description = document.createTextNode('Description:' + res.description + ', ');
+        card.appendChild(description);
+
+        let date = document.createTextNode('date:' + res.date);
+        card.appendChild(date);
+
+        let container = document.querySelector("#container");
+        container.appendChild(card);
+    });
+    </script>
+<br>enter wallet address </br>
+<br>generate new wallet address </br>
+<br>send  </br>
+</body>
+</html>
+
+
