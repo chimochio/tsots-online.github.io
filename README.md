@@ -14,3 +14,6 @@ like original ideas for this space.
 (would keep them seperate or not it doesn't matter ? its nice when ican take monster 2 watch or something? 
 so mabye its way u can use ur characters in 2d or 3d w/e . 
 (so we will have a batch of functions that affects them all easily for js and swift. 
+
+
+keywords javascript crypto faucet github solutions etc. (ppl can find accidentally here) 
