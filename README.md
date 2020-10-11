@@ -5,3 +5,12 @@ doesn't much more but u can randocm color gen etc type w/e move idgaf from db. a
 
 
 MIX THE VOXEL WITH AR.JS AND ADD THAT OBV... w/e 
+]
+
+
+(thinking of doing elements and player collection here 2 (figthing turnbased on a board with stuff on it >? ) in rmmv ?arena of armys like bots but with collectibles>?
+like original ideas for this space. 
+
+(would keep them seperate or not it doesn't matter ? its nice when ican take monster 2 watch or something? 
+so mabye its way u can use ur characters in 2d or 3d w/e . 
+(so we will have a batch of functions that affects them all easily for js and swift. 
