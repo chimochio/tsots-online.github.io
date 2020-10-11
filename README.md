@@ -17,3 +17,4 @@ so mabye its way u can use ur characters in 2d or 3d w/e .
 
 
 keywords javascript crypto faucet github solutions etc. (ppl can find accidentally here) 
+Medium article type things etc
