@@ -47,7 +47,12 @@
 
     <!-- At one point where you want to generate the cards you put this container -->
 <div id="container"></div>
+
+
  
+<button onclick="mineBlock()">mine block (start scratch 2 dev)</button>
+
+
 
 
 <br>enter wallet address </br>
@@ -66,7 +71,15 @@ Name: <input type="text" id="myText2" >
 <button onclick="myFunction2()">Try it</button>
 <div id="newWrite">
 <div>
+
+</body>
+
 <script>
+function mineBlock(){
+
+
+}
+
 function myFunction() {
   var value = document.getElementById("myText").value
 console.log(value)
@@ -77,18 +90,15 @@ function myFunction2() {
 document.getElementById("newWrite").innerHTML = value;
 console.log(value)
 }
-</script>
-</body>
 
-
-   <script type="text/javascript">
+  //////////////////////////////
 
 console.log("BLOCKCHAIN??")
         // Supposing you already have queried the API and have your data
     let data = [
-        {name: 'name0', description: 'description', date: 'XX/XX/XXXX'},
-        {name: 'name1', description: 'description', date: 'XX/XX/XXXX'},
-        {name: 'name2', description: 'description', date: 'XX/XX/XXXX'},
+        {name: 'test1', description: 'description', date: 'XX/XX/XXXX'},
+        {name: 'test2', description: 'description', date: 'XX/XX/XXXX'},
+        {name: 'test3', description: 'description', date: 'XX/XX/XXXX'},
     ]
 
 node = {
