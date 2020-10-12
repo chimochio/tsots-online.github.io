@@ -10,6 +10,10 @@ https://www.enterprisedb.com/postgres-tutorials/how-quickly-build-api-using-node
 
 https://blog.logrocket.com/setting-up-a-restful-api-with-node-js-and-postgresql-d96d6fc892d8/
 
+FAUCET ( will pay from its TX fees and stuff that it collects for doing tx's and other stuff. and will pay out bigger based on how much it banks in, 
+in lotteries and stuff therefore its opposite of mining off blockchain we dont wanna do that with ppls blockchain , so we do this instead its fine . thats
+4 tsotsOSAFE 2 . 
+
 everything will pass 2 either main heroku node every 5 hours or w/e is free otherwise p2p will do it asap. 
 also thats when cloudkit will pass(or later if no players ) its specific tsotsOS stuff or w/e 
 and that will be otherwise seperate. ofc u can send the TX's from cloudkit 2 blockchain all as a lump cuz u know they are legit. 
