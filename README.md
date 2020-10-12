@@ -1,5 +1,5 @@
 tsots todo 
-
+ psql -U postgres
 https://devcenter.heroku.com/articles/node-websockets
 
 https://github.com/heroku/node-js-sample
