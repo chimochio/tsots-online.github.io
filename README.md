@@ -1,5 +1,13 @@
 tsots todo 
 
+https://github.com/heroku/node-js-sample
+
+https://github.com/madhvesh/node-js-sample-blockchain
+
+want to host the node (main node) on heroku (nothing 2 do with cloudkit(but can cloudkit mine 2 or w/e who knows.
+but as long as node is runnning in heroku and others run node home or heroku who cares. then we just use that on swift or tokenize it so
+we dont even need 2 rely on it 2 do our own pseudochain transactions we will always verify on the blockchain whenever someone cloudkitmines.
+
 pet : pimp out (hold more pets ) more variables health strenth etc. feed this into the monster fighter 2 let monsters do arena. put bets w/e etc. more training etc monster rancher the variables can identify monster and unique blockchain code
 doesn't much more but u can randocm color gen etc type w/e move idgaf from db. also just like monster rancher but w/o graphics 4 now is fine. shouldnt' be that hard tbh. crytpo kitties but more accessible. 
 
