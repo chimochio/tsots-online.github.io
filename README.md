@@ -47,3 +47,8 @@ Medium article type things etc
 
 
 
+guardemons ( we are gonna treat them like living things that use tear it cards in battle. 
+will still do the tear its but. 
+battles i want 2 be like chrono trigger where there are consumable elements and levels 2 build 2 4 ur monster, that u stock him up with 
+before a battle, (but they are consumed ) but u buy elemenst for cheap at the stoer heals fire ice thunder blackness posion etc, 
+and ur demon have particular traits 2 augment or lessen the effects of certain elements  ofc. 
