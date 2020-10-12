@@ -1,0 +1,428 @@
+
+
+
+<html><head>
+<title>Guardemon </title>
+
+<body background="cloud.jpg">
+   
+   <br>YEARS WEEKS MONTHS: <br>
+       <input type="button" value="Next Week"  onclick="console.log("clicktest")>
+                                                                               
+                 <!-- can use different monster pngs for differnt "types" of monsters as long as free no one cares , these can be the solomons
+                                                                         demons so about 77 or so ... and different ways 2 unlock them?-->                                                              
+                                                                               <!-- make this more like monster rancher-->
+              <!-- doesnn'tmean no animation just means do turn based play ezier and more rewarding ,u will have 2 fix this upbut just a bit-->
+     <input type="button" value="Training"  onclick="console.log("clicktest")>
+                                                                         <input type="button" value="Rest"  onclick="console.log("clicktest")>
+   <input type="button" value="Sparring"  onclick="console.log("clicktest")>
+                                                                          
+                                                                         <input type="button" value="Battles"  onclick="console.log("clicktest")> 
+   
+   <input type="button" value="Monter Creation"  onclick="console.log("clicktest")>
+                                                                                 <input type="button" value="Monter Stables"  onclick="console.log("clicktest")>
+   
+<script language="JavaScript">
+
+                            
+<!-- Web Site:  http://www.angelfire.com/ak3/MewHiddenLair -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+//this code doesn't do much to beging with but we are totally changing it throwing it out and using a turn based monster code, 
+                             
+                             // probably the only thing we keep and not even that is maybe monster expression facial ... 
+                             // but we show the actual active monster , and a background habitat of some sort etc. 
+                             // can even probably use 16X16 monster for tile based crap? 
+<!-- Begin
+now=new Date;
+x=now.getTime() %32768;
+function Random(min,max) {
+x=(1103515245*x+12345) % 32768;
+return Math.floor(x*(max-min+1)/32768+min);
+}
+var num = new Array;
+num[0] = -1;
+num[1] = 1;
+var ctrsmit = new Array;
+ctrsmit[0] = '<|x_x|>';
+ctrsmit[1] = '<|!_!|>';
+var i = 0, will2live = 0;
+function livewill(j) {
+i += j;
+if (i == 0) tLiphe();
+if (i < 6) stat(mood[3]);
+if (oldstats == mood[3] && i >= 6) stat(mood[0]);
+if (alive == true) {
+barzies(i);
+   }
+}
+var bars='';
+function barzies(num) {
+bars='';
+for (var i=0;i!=num;i++) bars += '?';
+document.ctrform.will.value = bars;
+}
+var mood = new Array;
+mood[0] = '٩(^ᴗ^)۶';
+mood[1] = '(ง •̀ω•́)ง✧';
+mood[2] = '〴⋋_⋌〵';
+mood[3] = '(´･仝･｀)';
+mood[4] = '(￣^￣)ゞ';
+var Stat = new Array;
+Stat[0] = 'Alive';
+Stat[1] = 'Chimo cleaned';
+Stat[2] = 'Chimo not messy';
+Stat[3] = '༼つಠ益ಠ༽つ ─=≡ΣO))';
+Stat[4] = 'Fainted...Buy Another!';
+Stat[5] = '_(´ཀ`」 ∠)_!';
+Stat[6] = 'Disinfected!';
+Stat[7] = '––•–√\/––√\/––•–.Not infected';
+Stat[8] = '੭•̀ω•́)੭̸*✩⁺˚';
+var alive = false, aniID, statID, moodID, liveID, crapID, sickID, illID, normguy = '<(^_^)>';
+function gLiphe() {
+normguy = '<(^_^)>';
+stat('Purchasing...Updating database');
+livewill(15);
+statID = setTimeout("stat(Stat[0])",3500);
+setTimeout("alive = true",3500);
+Animate(false,'(-o-)');
+aniID = setTimeout("Animate(false,'<(o_o)>')",2500);
+aniID = setTimeout("Animate(false,'(O_o)>')",3500);
+aniID = setTimeout("Animate(false,'<(o_o)>')",4300);
+aniID = setTimeout("Animate(false,'<(o_O)')",4500);
+aniID = setTimeout("Animate(false,'<(o_o)>')",5300);
+aniID = setTimeout("Animate(false,'(O_o)>')",5500);
+aniID = setTimeout("Animate(false,normguy)",6500);livewill(15);
+setTimeout("independence()",6501)
+}
+function ID(dep) {
+clearTimeout(aniID);
+clearTimeout(statID);
+clearTimeout(liveID);
+clearTimeout(crapID);
+if (dep == true) clearTimeout(independ);
+}
+var f, t = '          ';
+function Animate(auto,ctrex) {
+if (auto == false) f = ctrex;
+if (auto == true) t = spacey.substring(0,Pos());
+document.ctrform.ctr.value = t + ctrex + poopie();
+}
+var indID, independ;
+function independence() {
+independ = setTimeout("Animate(true,f)",400);
+independ = setTimeout("Animate(true,f)",1200);
+independ = setTimeout("Animate(true,f)",2000);
+independ = setTimeout("Animate(true,f)",2800);
+independ = setTimeout("Animate(true,f)",3600);
+indID = setTimeout("independence()",4000);
+}
+var spacey = '                            ', k, l = 10;
+function Pos() {
+k = Random(0,1)
+if (k == 0) {
+if (t.length < 22) return l++;
+else if (t.length >= 22) Pos()
+}
+if (k == 1) {
+if (t.length > 0) return l--;
+else if (t.length == 0) return l++;
+   }
+}
+var poop = false;
+function poopie() {
+if (poop == true) return " <<poo>> ";
+else return '';
+}
+function eatpoop() {
+if (poop == false) {
+document.ctrform.phood.selectedIndex = 0;
+stat(Stat[2]);
+} 
+if (poop == true) {
+ID(true);
+eatpoopie();
+   }
+}
+function eatpoopie() {
+poop = false;
+eat(false,'<<poo>>');
+aniID = setTimeout("Animate(false,'~ξヾ( ^-x-^)')",750);
+if (sick == false) setTimeout("befect()",4000);
+}
+var pasto,healthy,eaty='<(¯o¯)>',eati='<(¯-¯)>',eaty2;
+function eat(health,pasti) {
+healthy = health;
+pasto = pasti;
+if (sick == true) {
+eaty = '<(¡o¡)>';
+eaty2 = '<(¡o)>';
+eati = '<(¡-¡)>';
+}
+else {
+eaty = '<(¯o¯)>';
+eaty2 = '<(¯o)>';
+eati = '<(¯-¯)>';
+}
+Animate(false,eati +'  '+ pasto);
+aniID = setTimeout("Animate(false,eaty +'  '+ pasto)",150);
+aniID = setTimeout("Animate(false,eaty +' '+ pasto)",300);
+aniID = setTimeout("Animate(false,eaty + pasto)",450);
+aniID = setTimeout("Animate(false,eaty2+ pasto)",600);
+setTimeout("phood(healthy)",650);
+}
+function pheed(antipasto) {
+if (antipasto == 0) eat(true,'>o<');
+else if (antipasto == 1) eat(true,'<eth>');
+else if (antipasto == 2) eatpoop();
+}
+function takeone() {
+ID(true);
+Animate(false,'<(¯=¯)>');
+aniID = setTimeout("Animate(false,'<(>_<)>')",500);
+aniID = setTimeout("Animate(false,'<(¯=¯)>')",1300);
+aniID = setTimeout("Animate(false,'<(>_<)>')",2600);
+aniID = setTimeout("Animate(false,normguy)",4800);
+setTimeout("infekt()",4799);
+setTimeout("poop = true",4799);
+full = 0;
+}
+function cleancage() {
+if (poop == false) stat(Stat[2]);
+if (poop == true) {
+poop = false;
+Animate(false,normguy);
+stat(Stat[1]);
+clearTimeout(sickID);
+ickcount = 0;
+   }
+}
+function tLiphe() {
+normguy = '<(*_*)>';
+poop = false;
+clearTimeout(sickID);
+clearTimeout(illID);
+clearTimeout(indID);
+ID(true);
+sick = false;
+full = 0;
+l = 1;
+i = 0;
+aniID = setTimeout("Animate(false,normguy)",1);
+statID = setTimeout("stat(Stat[4])",1);
+barzies(0);
+bruised = 0;
+poked = false;
+alive = false;
+}
+var oldstats, ick = '';
+function stat(stats) {
+ick = '';
+oldstats = stats;
+if (sick == true) ick = '[sick] ';
+document.ctrform.ctrstatus.value = ick + oldstats;
+}
+var j;
+function smite() {
+if (sick == false) normguy = '<(<¬>_<¬>)>';
+ID(true);
+statID = setTimeout("stat(Stat[3])",10);
+aniID = setTimeout("Animate(false,ctrsmit[Random(0,1)])",10);
+liveID = setTimeout("livewill(num[0])",20);
+aniID = setTimeout("Animate(false,normguy)",1300);
+statID = setTimeout("stat(mood[1])",1300);
+}
+var full = 0;
+function phood(salubrious) {
+if (sick == false) normguy = '<(^_^)>';
+ID(true);
+full++;
+if (salubrious == true) livewill(num[1]);
+aniID = setTimeout("Animate(false,eaty)",200);
+aniID = setTimeout("Animate(false,eati)",700);
+aniID = setTimeout("Animate(false,eaty)",1200);
+aniID = setTimeout("Animate(false,eati)",1700);
+aniID = setTimeout("Animate(false,eaty)",2200);
+aniID = setTimeout("Animate(false,eati)",2700);
+aniID = setTimeout("Animate(false,normguy)",3200);
+if (full == 3) setTimeout("takeone()",6000);
+if (full >= 3) full = 0;
+}
+var sick = false, ickcount = 0;
+function infekt() {
+ickcount++;
+if (ickcount != 2) sickID = setTimeout("infekt()",30000);
+if (ickcount == 2) befect();
+}
+function befect() {
+sick = true;
+setTimeout("stat(Stat[5])",500);
+ickcount = 0;
+besick();
+normguy = '<(¡_¡)>';
+}
+function besick() {
+livewill(num[0]);
+Animate(false,normguy);
+if (sick == true) illID = setTimeout("besick()",2000);
+}
+function dnfekt() {
+if (sick == false) stat(Stat[7]);
+if (sick == true) {
+if (poop == false) clearTimeout(sickID);
+normguy = '<(^_^)>';
+eat(false,'?');
+sick = false;
+setTimeout("stat(Stat[6])",4000);
+ickcount = 0;
+if (poop == true) infekt();
+   }
+}
+function scratchyscratchy() {
+normguy = '<(^_^)>';
+ID(true);
+statID = setTimeout("stat(Stat[8] +'(scratch scratch)')",710);
+aniID = setTimeout("Animate(false,'(◔ д◔)')",200);
+aniID = setTimeout("Animate(false,'(ʘдʘ╬)')",800);
+aniID = setTimeout("Animate(false,'(◔ д◔)')",1400);
+aniID = setTimeout("Animate(false,'(ʘдʘ╬)')",2000);
+aniID = setTimeout("Animate(false,'(ʘдʘ╬)')",2600);
+aniID = setTimeout("Animate(false,'(TдT)')",3400);
+aniID = setTimeout("Animate(false,'(TдT)')",4200);
+aniID = setTimeout("Animate(false,'（/｡＼)')",5000);
+aniID = setTimeout("Animate(false,'凸( •̀_•́ )凸')",5600);
+aniID = setTimeout("Animate(false,normguy)",6600);
+statID = setTimeout("stat(mood[0])",6600);
+liveID = setTimeout("livewill(num[1])",6600);
+}
+var bruised = 0, poked = false;
+function poke() {
+if (bruised >= 7) {
+normguy='<(-_-)>zzz';
+aniID = setTimeout("Animate(false,'(-_-)')",1);
+liveID = setTimeout("livewill(num[0])",1);
+if (poked == false) statID = setTimeout("stat('Sleepy')",20);
+aniID = setTimeout("Animate(false,normguy)",300);
+poked = true;
+}
+if (bruised < 7) {
+bruised++;
+normguy = '♪┏(°.°)┛ ♪'
+aniID = setTimeout("Animate(false,' <(^o^)>')",1);
+liveID = setTimeout("livewill(num[1])",1);
+statID = setTimeout("stat('Chimochi<3 Chi :D -{@...')",20);
+aniID = setTimeout("Animate(false,normguy)",300);
+   }
+}
+//  End -->
+
+
+// variable of money giving for value of pet can increase based on time health happiness w/e.
+//and can fall below purchase value.
+</script>
+   
+   <script>
+      
+    
+   </script>
+</head>
+
+
+<body bgcolor="orange">
+<font face="Times New Roman,Times">
+</font>
+<font face="Times New Roman,Times">
+<center><h3>Chimo Pet</h3></center>
+<center>
+<form name="ctrform">
+<table border="45" cellspacing="5" cellpadding="5" bgcolor="purple">
+<tbody><tr><td><font color="blue"><br>
+<table>
+<tbody><tr>
+<th>Life</th>
+<th>Status</th>
+</tr>
+<tr>
+<td><div align="center"><center><p><input type="text" size="20" name="will"></p></center></div></td>
+<td align="center"><input type="text" size="25" name="ctrstatus"></td>
+</tr>
+<tr align="center">
+
+<th>Options</th>
+</tr>
+<tr align="center">
+<td><input type="text" name="ctr" size="30" onfocus="if (alive == true) tLiphe()"></td>
+<td><div align="center"><center><p><input type="button" value="Buy a demon 1000cp" onclick="if (alive == false) gLiphe()"></p></center></div></td>
+<td><div align="center"><center><p><input type="button" value="Sell demon 1983cp" onclick="if (alive == false) gLiphe()"></p></center></div></td>
+<br>
+<div></div>
+</tr>
+</tbody>train your pet to increase its value</table>
+<div align="center"><center>
+<table>
+<tbody><tr>
+<td><input type="button" value="Train" onclick="if (alive == true) smite()"></td></tr><tr>
+<td><input type="button" value="Clean ranch" onclick="if (alive == true) cleancage()"></td></tr><tr>
+<td><input type="button" value="┣▇▇▇═─ 200cp" onclick="if (alive == true) dnfekt()"></td>
+</tr>
+<tr>
+<td><input type="button" value="Give Food" onclick="if (alive == true) pheed(document.ctrform.phood.selectedIndex)"> 
+<select name="phood" size="1">
+<option> ><(((º>
+
+ 25cp</option>
+<option>~~(__^·> 10cp</option> 
+</select></td>
+</tr>
+<tr>
+<td><input type="button" value="Scold Guardemon"  onclick="if (alive == true) scratchyscratchy()"></td>
+</tr>
+<tr>
+<td><input type="button" value="Tickle Guardemon" onclick="if (alive == true) poke()"><br></td>
+</tr>
+</tbody></table>
+</center>
+</div>
+</font></td>
+</tr>
+</tbody></table>
+</form>
+</center>
+
+   <p><center>  ▂▃▅▇█▓▒░۩۞۩ ۩۞۩░▒▓█▇▅▃▂</center> </p><center>
+<font face="arial, helvetica" size="-2">
+<br>
+   <h3>Current Guardemon BlockID :</h3>
+   <h2>STATS</h2>
+      <h3>HEALTH :</h3>
+      <h3>Speed :</h3>
+      <h3>Power :</h3>
+      <h3>Defense :</h3>
+   <h3>Accuracy :</h3>
+      <h3>Intelligence :</h3>
+      <h3>HEALTH :</h3>
+
+   <img src="digiMonsterRanch/monsters/128x128/1_0png"  style="width:100px;height:108px;">:bluechimochio[]
+ <img src="digiMonsterRanch/monsters/128x128/1_1.png"  style="width:100px;height:108px;">:bluechimochio[]
+
+   <img src="digiMonsterRanch/monsters/128x128/1_0png"  style="width:100px;height:108px;">:bluechimochio[]
+ <img src="digiMonsterRanch/monsters/128x128/1_1.png"  style="width:100px;height:108px;">:bluechimochio[]
+
+   
+   
+   
+   
+   
+   <br>
+  -- ONLINE LOBBY--
+   SOLO ADVENTURE: <br>
+PVP: <br>
+   GROUP BATTLE:<br>
+   TOURNAMENT: <br>
+<br>
+<br>║▌║█║▌│║▌║▌█<br></a></font>
+</center><p>
+<br clear="left">
+
+</p></font></font></body></html>
