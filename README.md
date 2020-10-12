@@ -20,6 +20,10 @@ want to host the node (main node) on heroku (nothing 2 do with cloudkit(but can 
 but as long as node is runnning in heroku and others run node home or heroku who cares. then we just use that on swift or tokenize it so
 we dont even need 2 rely on it 2 do our own pseudochain transactions we will always verify on the blockchain whenever someone cloudkitmines.
 
+the cloudkit mining coinchain that holds this chain and is able 2 transact and exchange with it will have its own value and be able 2 be mined otherwase on mac swift and can even do a cmd line export . or can just mine on phone mac all that stuff and the other coins on mac shoudl exchange into the tson coin ofc were just gonna do the tson coin alone on the JS but branch out all those other weird coins and excchanges in js and on swift. 
+and the faucets can also create maybe the coins from swift ? or else just xchange ez w/e but yea will do 2 separate coins that actually join when the
+thing has 2 update. they can all trade freely ofc. 
+
 pet : pimp out (hold more pets ) more variables health strenth etc. feed this into the monster fighter 2 let monsters do arena. put bets w/e etc. more training etc monster rancher the variables can identify monster and unique blockchain code
 doesn't much more but u can randocm color gen etc type w/e move idgaf from db. also just like monster rancher but w/o graphics 4 now is fine. shouldnt' be that hard tbh. crytpo kitties but more accessible. 
 
