@@ -57,16 +57,25 @@
 <br>send  </br>
 
 
-Name: <input type="text" id="myText" value="Mickey">
-
-<p>Click the button to change the value of the text field.</p>
+Name: <input type="text" id="myText" >
 
 <button onclick="myFunction()">Try it</button>
 
+Name: <input type="text" id="myText2" >
+
+<button onclick="myFunction2()">Try it</button>
+<div id="newWrite">
+<div>
 <script>
 function myFunction() {
-  document.getElementById("myText").value = "Johnny Bravo";
-console.log("")
+  var value = document.getElementById("myText").value
+console.log(value)
+}
+
+function myFunction2() {
+  var value = document.getElementById("myText2").value
+document.getElementById("newWrite").innerHTML = value;
+console.log(value)
 }
 </script>
 </body>
