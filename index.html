@@ -10,10 +10,25 @@ BUT THIS IS A FINE PLACE HOLDER , ANYWAYS THE MENU U OPEN WOULD PROBABLY LOOK LI
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body background="cloud.jpg">
+  <link rel="stylesheet" href="gh-fork-ribbon.css">
 <style>
+  /* The default background color is #c00 */
+  .github-fork-ribbon.right-bottom:before {
+      background-color: #090;
+  }
+
+  .github-fork-ribbon.right-top:before {
+      background-color: #f80;
+  }
+
+  .github-fork-ribbon.left-bottom:before {
+      background-color: #333;
+  }
+
+
 * {box-sizing: border-box;}
 
-body { 
+body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -30,7 +45,7 @@ body {
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -60,7 +75,7 @@ body {
     display: block;
     text-align: left;
   }
-  
+
   .header-right {
     float: none;
   }
@@ -68,30 +83,120 @@ body {
 </style>
 
 <style>
+html {
+  background: #f5f7f8;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+}
+
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+
+}
+
+@media only screen and (min-width: 500px) {
+  .band {
+    grid-template-columns: 1fr 1fr;
+  }
+  .item-1 {
+  grid-column: 1/ span 2;
+  }
+  .item-1 h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* card */
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 25%;
-  border-radius: 5px;
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 }
 
-img {
-  border-radius: 5px 5px 0 0;
+.card article {
+  padding: 20px;
+  display: -webkit-box;
+  display: flex;
+
+  -webkit-box-flex: 1;
+
+          flex: 1;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+
+}
+.card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
 }
 
-.container {
-  padding: 2px 16px;
+.card p {
+  -webkit-box-flex: 1;
+          flex: 1; /* make p grow to fill available space*/
+  line-height: 1.4;
+}
+
+/* typography */
+h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
 }
 </style>
+<!-- TOP RIGHT RIBBON: START COPYING HERE -->
 
-<! -- HEADER START TSOTS ONLINE --> 
+    <!-- TOP LEFT RIBBON: START COPYING HERE -->
+    <a class="github-fork-ribbon left-top" href="https://github.com/simonwhitaker/github-fork-ribbon-css" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <!-- TOP LEFT RIBBON: END COPYING HERE -->
+<! -- HEADER START TSOTS ONLINE -->
 <div class="header">
   <a href="#default" class="logo"><center>
-<h1>tsots-online.github.io</h1>
+<h1>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; tsots-online.github.io</h1>
 </center></a>
   <div class="header-right">
     <a class="active" href="#home">Home</a>
@@ -102,15 +207,70 @@ img {
 
 <!-- header end TSOTS ONLINE-->
 
+<div class="support-grid"></div>
 
+<div class="band">
+  <div class="item-1">
+        <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" class="card">
+          <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);"></div>
+          <article>
+            <h1>International Artist Feature: Malaysia</h1>
+            <span>Mary Winkler</span>
+          </article>
+        </a>
+
+  </div>
 <!-- START CARD -->
 
+
+<div class="item-4">
+      <a href="https://webdesign.tutsplus.com/tutorials/how-to-code-a-scrolling-alien-lander-website--cms-26826" class="card">
+        <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/landing.png);"></div>
+        <article>
+          <h1>How to Code a Scrolling “Alien Lander” Website</h1>
+          <p>We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander” making its way to touch down.</p>
+          <span>Kezz Bracey</span>
+        </article>
+      </a>
+</div>
+<div class="item-5">
+      <a href="https://design.tutsplus.com/tutorials/stranger-things-inspired-text-effect--cms-27139" class="card">
+        <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/strange.jpg);"></div>
+        <article>
+          <h1>How to Create a “Stranger Things” Text Effect in Adobe Photoshop</h1>
+          <span>Rose</span>
+        </article>
+      </a>
+</div>
+<div class="item-6">
+  <a href="https://photography.tutsplus.com/articles/5-inspirational-business-portraits-and-how-to-make-your-own--cms-27338" class="card">
+    <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flor.jpg);"></div>
+    <article>
+      <h1>5 Inspirational Business Portraits and How to Make Your Own</h1>
+
+      <span>Marie Gardiner</span>
+    </article>
+  </a>
+</div>
+<div class="item-7">
+  <a href="https://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281" class="card">
+    <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/china.png);"></div>
+    <article>
+      <h1>Notes From Behind the Firewall: The State of Web Design in China</h1>
+      <span>Kendra Schaefer</span>
+    </article>
+  </a>
+</div>
+
+</div>
+<script>
+  /*
    <div class="card">
 <a href="forms.html">
   <img src="images/profile0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>Signin</b></h4> 
-   
+    <h4><b>Signin</b></h4>
+
 </a>
 
   </div>
@@ -123,7 +283,7 @@ img {
 <a href="https://github.com/tsots-online/tson-coin">
   <img src="images/github0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>Download Tson Node GITHUB </b></h4> 
+    <h4><b>Download Tson Node GITHUB </b></h4>
    </a>
   </div>
 
@@ -136,7 +296,7 @@ img {
 <a href="bancchimochio.html">
   <img src="images/bank0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>Bank </b></h4> 
+    <h4><b>Bank </b></h4>
    </a>
   </div>
 
@@ -148,7 +308,7 @@ img {
 <a href="blockchain/blockchain.html">
   <img src="images/blockchain0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>Blockchain </b></h4> 
+    <h4><b>Blockchain </b></h4>
    </a>
   </div>
 
@@ -160,7 +320,7 @@ img {
 <a href="demonBestiary.html">
   <img src="images/wallet0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>Wallet</b></h4> 
+    <h4><b>Wallet</b></h4>
    </a>
   </div>
 
@@ -172,7 +332,7 @@ img {
 <a href="demonBestiary.html">
   <img src="images/faucet0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>Faucet</b></h4> 
+    <h4><b>Faucet</b></h4>
    </a>
   </div>
 
@@ -184,8 +344,8 @@ img {
 <a href="demonBestiary.html">
   <img src="images/monster0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>Guardemon</b></h4> 
-   
+    <h4><b>Guardemon</b></h4>
+
 </a>
 
 
@@ -198,8 +358,8 @@ img {
 <a href="cloudkit/cloudkit.html">
   <img src="images/profile0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>CLOUDKIT</b></h4> 
-   
+    <h4><b>CLOUDKIT</b></h4>
+
 </a>
 
   </div>
@@ -213,8 +373,8 @@ img {
 <a href="poker/poker.html>
   <img src="images/poker0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>poker</b></h4> 
-   
+    <h4><b>poker</b></h4>
+
 </a>
 
   </div>
@@ -228,8 +388,8 @@ img {
 <a href="stockMarket/stocks.html">
   <img src="images/profile0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>Stock market lite</b></h4> 
-   
+    <h4><b>Stock market lite</b></h4>
+
 </a>
 
   </div>
@@ -243,8 +403,8 @@ img {
 <a href="textEditor/textEditor.html">
   <img src="images/profile0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>text editor </b></h4> 
-   
+    <h4><b>text editor </b></h4>
+
 </a>
 
   </div>
@@ -258,8 +418,8 @@ img {
 <a href="http://kingjbbrooks.github.io/chimochio/BOARDGAMEMMO/mmo.html>
   <img src="images/profile0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>Tsots MV </b></h4> 
-   
+    <h4><b>Tsots MV </b></h4>
+
 </a>
 
   </div>
@@ -274,29 +434,29 @@ img {
 <a href="voxel.html">
   <img src="images/profile0.jpg" alt="Avatar" width="200" height="200">
   <div class="container">
-    <h4><b>voxel</b></h4> 
-   
+    <h4><b>voxel</b></h4>
+
 </a>
 
   </div>
 </div>
 
 <!--END-->
+*/
+</script>
 
 
 
 
-
-  
  <p>   <a href="sportsScores/sportsScores.html">Fantasy Sports Staking Scores and Calendars </a> <br> &nbsp; </p> <br>
-  <!-- if u have 2 just have staking on completely random sports scores based on fantasy machine learning stats... its fine ;) 
+  <!-- if u have 2 just have staking on completely random sports scores based on fantasy machine learning stats... its fine ;)
 thats just fine its just like the fake stock market w/e also monster fight staking if u sort out digimonster rancher-->
-  
+
 
  <a href="guardemon/guardemonRanch.html"> Guardemons </a><br> <br>
  <p>   <a href="guardemon/monster.html">monster fights </a> <br> &nbsp; </p> <br>
-  <!-- train these up to level 1,000 with every level after 100 being very hard 2 get 2 and just let ppl battle) u dont have to evolve , will change monster properties etc.--> 
-<!-- eggs generate random monster with higher pay generating higher level monster (different rank monsters ucant get till u are that rank breeder) -->   
+  <!-- train these up to level 1,000 with every level after 100 being very hard 2 get 2 and just let ppl battle) u dont have to evolve , will change monster properties etc.-->
+<!-- eggs generate random monster with higher pay generating higher level monster (different rank monsters ucant get till u are that rank breeder) -->
    <p>   <a href="demonBestiary.html">demon bestiary </a> <br> &nbsp; </p> <br>
   <a href="cloudkit/cloudkit.html">cloudkit</a><br> &nbsp;
  <a href="xcpgame.html">Chimochio BLUE and YOU Gamble</a><br> &nbsp;
@@ -311,7 +471,7 @@ thats just fine its just like the fake stock market w/e also monster fight staki
     <a href="foosball/foosball.html">foosball</a><br> &nbsp;
   <a href="minesweeper.html"> mine sweeper</a><br> &nbsp;
   <a href="blockbreak.html">Block Break Arcade!</a><br> &nbsp;
-  
+
 
    <a href="snake.html">Snake </a> <br> &nbsp;
 
@@ -324,14 +484,14 @@ thats just fine its just like the fake stock market w/e also monster fight staki
 
 
       <a href="http://kingjbbrooks.github.io/chimochio/BOARDGAMEMMO/mmo.html">TsotsLite MV Mining </a><br> <br>
- 
+
  <a href="voxel.html">Tsots Lite Block Studio AR.js </a> <br> &nbsp;
-     
-    
+
+
  <a href="tsotsJS.html"> babylonTON </a> <br> &nbsp;
 
 <img src="guardemon/monsters/128x128/1_2.png"  style="width:100px;height:108px;">
-     
+
       &nbsp;  <img src="guardemon/monsters/128x128/3_1.png"  style="width:150px;height:148px;">  &nbsp;  <img src="guardemon/monsters/128x128/11_1.png"  style="width:100px;height:108px;">  &nbsp;
  <img src="guardemon/monsters/128x128/9_1.png"  style="width:150px;height:148px;">
   <p style="color:silver"> <a href="highscores.html">HighScoreBoard</a><br> &nbsp;
@@ -340,12 +500,9 @@ thats just fine its just like the fake stock market w/e also monster fight staki
   <center><h1>Welome to Tsots Lite JS<br> </h1> <h2>Online cryptocurrency faucets and arcades </h2> <br>
      <h3> </h3><br>
    <h4> TSOTS ONLINE for IOS APPLE TV MACOS </h4>
- 
+
 
   </center>
       </body>
 <script src="admob.js"></script>
 </html>
-
-
-
