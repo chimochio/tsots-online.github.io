@@ -4,6 +4,12 @@ https://github.com/heroku/node-js-sample
 
 https://github.com/madhvesh/node-js-sample-blockchain
 
+everything will pass 2 either main heroku node every 5 hours or w/e is free otherwise p2p will do it asap. 
+also thats when cloudkit will pass(or later if no players ) its specific tsotsOS stuff or w/e 
+and that will be otherwise seperate. ofc u can send the TX's from cloudkit 2 blockchain all as a lump cuz u know they are legit. 
+but they usually validate on heroku just not these. cuz they generated from the system already. we treat it like source code. 
+otherwise, we are using a sqlite3 db on heroku like they teach in that harvard class. (and anyone else can also set their own up 2 cloudmine this stuff0
+
 want to host the node (main node) on heroku (nothing 2 do with cloudkit(but can cloudkit mine 2 or w/e who knows.
 but as long as node is runnning in heroku and others run node home or heroku who cares. then we just use that on swift or tokenize it so
 we dont even need 2 rely on it 2 do our own pseudochain transactions we will always verify on the blockchain whenever someone cloudkitmines.
