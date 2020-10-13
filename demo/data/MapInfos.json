@@ -1,7 +1,6 @@
 [
 null,
-{"id":1,"expanded":true,"name":"Basic","order":1,"parentId":0,"scrollX":451,"scrollY":455.5},
-{"id":2,"expanded":true,"name":"Troop Event","order":3,"parentId":1,"scrollX":461,"scrollY":708.5},
-{"id":3,"expanded":false,"name":"MAP003","order":2,"parentId":1,"scrollX":459,"scrollY":312.5},
-{"id":4,"expanded":true,"name":"Blank page","order":4,"parentId":0,"scrollX":451,"scrollY":1040.5}
+{"id":1,"expanded":true,"name":"Basic","order":1,"parentId":0,"scrollX":451,"scrollY":452},
+{"id":2,"expanded":true,"name":"Troop Event","order":3,"parentId":0,"scrollX":461,"scrollY":709},
+{"id":3,"expanded":false,"name":"MAP003","order":2,"parentId":1,"scrollX":459,"scrollY":316}
 ]
