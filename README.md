@@ -1,4 +1,12 @@
 tsots todo 
+
+hooking into mongodb is good 2 . ppl may have made a cool MMO for MV on heroku. 
+anyways u can have ppl make their own herokus for ur code really ez. so..... 
+we might have ppl doing a bunch of that cloud noding. nodejs postgres mongodb... 
+and then i will try 2 put tactics engine and levels on top of that.... 
+(it may not be ez but its def "doable" depending on how much work u put in , but pls do school work 2. 
+
+
  psql -U postgres
 https://devcenter.heroku.com/articles/node-websockets
 
