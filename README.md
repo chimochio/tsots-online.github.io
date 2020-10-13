@@ -10,6 +10,11 @@ https://www.enterprisedb.com/postgres-tutorials/how-quickly-build-api-using-node
 
 https://blog.logrocket.com/setting-up-a-restful-api-with-node-js-and-postgresql-d96d6fc892d8/
 
+
+for rpg maker tacktic,,, if u want, turn off auto fight and make the guys just loop a route of patrole. 
+then the friends can also signal for help , but u could use stealth. with just give very strong or many eneimes and variety of that 
+so u should use the stealth but also not make it dependant, just a cool balancing. 
+
 FAUCET ( will pay from its TX fees and stuff that it collects for doing tx's and other stuff. and will pay out bigger based on how much it banks in, 
 in lotteries and stuff therefore its opposite of mining off blockchain we dont wanna do that with ppls blockchain , so we do this instead its fine . thats
 4 tsotsOSAFE 2 . 
