@@ -61,3 +61,9 @@ will still do the tear its but.
 battles i want 2 be like chrono trigger where there are consumable elements and levels 2 build 2 4 ur monster, that u stock him up with 
 before a battle, (but they are consumed ) but u buy elemenst for cheap at the stoer heals fire ice thunder blackness posion etc, 
 and ur demon have particular traits 2 augment or lessen the effects of certain elements  ofc. 
+
+make the mud VERY GRINDY (but make players beable 2 fight eachother with thier characters and have multi characters with diff spells
+
+and those same characters are mini tear its that can level up 2 the 2d TSORD GAME (which can be deleted or modded but still pushes up 2 3d stuff . 
+
+but mud is beatable demo kind of  2d is beatable but longer harder even , and then ofc 3d not even a beatble thing just bigger cooler stuff w/e . 
