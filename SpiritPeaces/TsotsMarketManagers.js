@@ -6,7 +6,7 @@
 
 
 
-/// chimochio bank = 
+/// tsots bank = 
 
 
 
@@ -40,7 +40,7 @@
 
 /// real economies structures calculations of prices and supply and demand and booms and bust of all items
 // and a macro header ,and mircovariables within commodities and financial items
-// that regulates buy and sell price of items by chimochio, regulates wholesale and retail bulk , prices and shit
+// that regulates buy and sell price of items by tsots, regulates wholesale and retail bulk , prices and shit
 
 // based on rarity and availiablity , and amount of money average player and peice and merchant has
 // therefore at all times (db calculations per *game hour for all items IN ENTIRE GAME UNIVERSE*) , cept classic games
@@ -59,7 +59,7 @@
 
 //  the Market manager also keeps track of real estate location tile prices for all tiles in game
 // as it also keeps a pool database of real time player peice contracts legal stats and yes all stats
-// can be used every hour 2 very elegantly keep a running book on the legal and economic world of chimochio and that info
+// can be used every hour 2 very elegantly keep a running book on the legal and economic world of tsots and that info
 // is supplied back 2 the player , perhaps by a scrolling stock ticker , that also feeds relevant game news, and announcements
 // for tournaments, etc, and can be turned off obv. 
 //

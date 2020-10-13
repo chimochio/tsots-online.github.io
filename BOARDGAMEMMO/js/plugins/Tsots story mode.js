@@ -171,7 +171,7 @@ map 13.
 // OUT OF THIS WORLD
 
 
-// guide the saucer pilot it chimochio style, while sol keeps the satelites from pinging u
+// guide the saucer pilot it tsots style, while sol keeps the satelites from pinging u
 // using a sonar to counter the sonar ( this can be done with boats 2 )))) *2 sonars cancel eachother out ((
 )))so ur both invisible 2 eachother )))))  ) ) )he just explains this. no one even uses sonar lol .
 //its a pretty cheap space mission but, at least u got a taste of flying a space saucer  ;P .

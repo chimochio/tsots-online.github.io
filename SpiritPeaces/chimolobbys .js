@@ -41,7 +41,7 @@
     // which is important for variable change and food growth and night and day, stock price change,property land,  etc. )
     // even has a dedicated link 2 ebay like market place, with main and individualized sections
     // same with the reddit subreddit, but 4channy like forums, that are all user created, cept a few
-    // chimochio specific functions and globas. 
+    // tsots specific functions and globas. 
     // that masquerate as , forums u buy 2 start a discussion. like ur renting a pervasive logged chat room with chimo money. 
     // for whatever reason u might want 2 , and can shut it down and save it iff u want. 
     // perhaps 2 resolve a dispute between spirits in a text based spirit court that may arize
@@ -54,8 +54,8 @@
     // and gives everyone a  chance to express themself an be heard. 
     //and if someone is taking their turns and wasting them, obviously u can whip their ass.
     // 
-    /// i like the idea of having a shark tank like thing at chimochio 2 where chimochio invests
-// chimochio money in player ventures. 
+    /// i like the idea of having a shark tank like thing at tsots 2 where tsots invests
+// tsots money in player ventures. 
     
     // god that will be soooo FUN :) please code this game already
     // maybe u should start with events. 

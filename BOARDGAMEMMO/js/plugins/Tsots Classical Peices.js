@@ -1130,8 +1130,8 @@ if item > 0 {display item in menu }
                         // so u better be farming or something. 
                         
                         // when u sell items if u sell over max item ur merchant can hold, 
-                        // he pulls money from distributor, out of chimochio supply
-                        // merchant can easy get resuply shipment from chimochio for a cheap order place in one-3  turns
+                        // he pulls money from distributor, out of tsots supply
+                        // merchant can easy get resuply shipment from tsots for a cheap order place in one-3  turns
                         // depending on delivery u pay for. 
                         // basically the bank. so thats how that works  and u can keep ur economy going by farming
                         // just by selling 2 the computer bank . but it buys for less and less, 

@@ -1,6 +1,6 @@
 
 
-///////////////chimochio fairy initializer test. 
+///////////////tsots fairy initializer test. 
 
 /// this function corresponds as our first function, getting a 
 

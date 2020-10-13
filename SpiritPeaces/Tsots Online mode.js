@@ -11,7 +11,7 @@
 // variables here can also be interacted with using codes and menus from angular client side lyfebook profiles, 
 
 // and indeed u must interacte with ur lyfebook in a turn based way, so this really reduces speed used. and is highly scalable. 
-// even for our tiny lil cute chimochio lyfebooks. 
+// even for our tiny lil cute tsots lyfebooks. 
 
 /// require sockets io
 
@@ -63,7 +63,7 @@
 /// has mode like expanse battle mode, but totally non pvp, but have tiny pvp areas, like the church or ss hub,in reverse. 
 /// which is thousands of online tiles, where cities are allowed 2 florish 
 /// u can fly 2 different secret islands ( one is india((big server indian language but obviously u can go 2 if u speak hindi), one is china((chineses server))()(, one is australia(()lots of native npc barabarian tribes, like civ and tons  wild animals))(), one is japans(underwater, DEATH));
-// this is really for finance and slice of life dramas 2 unfold and civilization 2 floorish in a real player created virtual world. :) CHIMOCHIO . . ( is very girly lol, but ppl may come here 2 do safe business, which is what keeps it prosperous. _))))
+// this is really for finance and slice of life dramas 2 unfold and civilization 2 floorish in a real player created virtual world. :) tsots . . ( is very girly lol, but ppl may come here 2 do safe business, which is what keeps it prosperous. _))))
             ---inspired by mom, (PERMANENT PEACE : )  < 3 DOVE . ( so they really have ultimate options for play :) :) :):
             // this is more about cooperation, and financial scores, and how many friends u have, 
             // and ur custom profile and house, and house flipping and property grapping
@@ -72,7 +72,7 @@
             // ly ing cheating sex, alot of spying and espianoge and nepotism, sissy fight lol, . schools, 
             // diff presitious campusess , can spring up . but the place start emty with just rmmv, like coded posibility models. 
             // ofc, we will make sure they actually work thru beta testing before we release this amazing gift  2 the world !:) <3
-            CHIMOCHIO ! >
+            tsots ! >
                 
                 // lot more food, availiable, seeds, possible recipies. 
                 // recipie system works, where players might milk an animal/
@@ -82,7 +82,7 @@
                 // lot more luxury items, all that data, toys, lamps, desks, stove, all providing great, SIM like functionality
                 
                 // indeed, u choose ur role in this world, u could be a city planner, employed by the great
-                // CHIMOCHIO , multiuniversal corporation, who hiresl player beta tester2 test and build in the game, 
+                // tsots , multiuniversal corporation, who hiresl player beta tester2 test and build in the game, 
                 // and we iron out bugs with the, and we let them administer those systems
                 // (we really dont pay them much cuz its fun, and eventually we dont even have 2 pay them, ppl will be itching
                 // 2 take their posiitions ,simply for ingame money , and power. :)  .
@@ -105,8 +105,8 @@
                 /// oraganising huge warehouses like databases, renting storage space w/e u have 2 do 2 store 
                 /// shit u wanna sell but cant carry . 
                 // the logistics of shipping those goods, 
-                // much more expanse of land gets added, but only as chimochio organically grows and 
-                // we strategically design the new land, and maybe set up chimochio headquarters there
+                // much more expanse of land gets added, but only as tsots organically grows and 
+                // we strategically design the new land, and maybe set up tsots headquarters there
                 // of peice controllers we hire(janitor essentially, four chan as a mmo board game mostly but, talk 2 . ) . 
 // in mars peoople can tunnel thru, like minecraft, and mine, and make mining comapnies, both pvp and non,
                 // and can use lava and mars ore  2 make the super space metal that the ss and clone battle ships and stuff are
@@ -349,7 +349,7 @@ findp2. when there
 The Persian Gulf and its coastal areas are the world's largest single source of crude oil, and related industries dominate the region. Safaniya Oil Field, the world's largest offshore oilfield, is located in the Persian Gulf. Large gas finds have also been made, with Qatar and Iran sharing a giant field across the territorial median line (North Field in the Qatari sector; South Pars Field in the Iranian sector). Using this gas, Qatar has built up a substantial liquefied natural gas (LNG) and petrochemical industry.
 
 In 2002, the Persian Gulf nations of Bahrain, Iran, Iraq, Kuwait, Qatar, Saudi Arabia, and the UAE, produced about 25% of the world's oil, held nearly two-thirds of the world's crude oil reserves, and about 35% of the world natural gas reserves.[8][9] The oil-rich countries (excluding Iraq) that have a coastline on the Persian Gulf are referred to as the Persian Gulf States. Iraq's egress to the gulf is narrow and easily blockaded consisting of the marshy river delta of the Shatt al-Arab, which carries the waters of the Euphrates and the Tigris rivers, where the east bank is held by Iran.
-LOGISTICS, good for when lucky sol and puppet rooney owned global company chimochio, comes into earth and owns shit. 
+LOGISTICS, good for when lucky sol and puppet rooney owned global company tsots, comes into earth and owns shit. 
 
 
 
@@ -387,7 +387,7 @@ LOGISTICS, good for when lucky sol and puppet rooney owned global company chimoc
 // like managing their virtual market 
 // where there are auction an catalouge systems for in game items, and foods that  players can sell 
 // in the in game market, even shipping and in bulk
-///and exactly is a mircro model of CHIMOCHIO.coms back end warehouse and shipping cataloug like amazon/ebay. 
+///and exactly is a mircro model of tsots.coms back end warehouse and shipping cataloug like amazon/ebay. 
 // for our own monopolynet. 
 
 // in laymens terms , lyfe book hooks up 2 hosting ur own with php and ajax / xml  .

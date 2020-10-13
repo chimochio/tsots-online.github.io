@@ -31,12 +31,12 @@ items :    // certain items being in inventory  will give auto skills, gun shoot
 
 // item calculations = 
 
-// all items are generic "chimochio" brand less otherwise specified
+// all items are generic "tsots" brand less otherwise specified
 // all generic items have item variables, economy variables as well, 2 keep track of how many items are globally in play for all spirits
-// with chimochio profiles, and regulates economy accordingly . 
+// with tsots profiles, and regulates economy accordingly . 
 // those values route  2 TsotsMarketManager.js , but are born here when the items are initialized into the game thru sale. 
 // there is also "?" items, for player created items that get economy variables assigned to them
-// availiable for whole sale and for retail prices thru chimochio supply stores and wharehouses. . 
+// availiable for whole sale and for retail prices thru tsots supply stores and wharehouses. . 
 // also being around certain items adds skill 2 item ex. 
 
 // commodity items

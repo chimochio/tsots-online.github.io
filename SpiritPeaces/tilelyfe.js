@@ -69,7 +69,7 @@ how often does tile produce resource? {25%chance to return plus skill/item added
 Tilelyfe.prototype.realestate = function(){
 
 who owns tile ? 
-chimochio?
+tsots?
 player   by contract/ trespass law 
 what is tile value set at ?
          };

@@ -28,7 +28,7 @@
 
 /      /   links 2  the lobbys as well, and can creat ur own lobbys between friends right thru message/
 // can be doing a game at any time in chat 
-// just by typing ##chimochio##player##player2## w/e or doing things from the lobby , whatever ur comfy with. 
+// just by typing ##tsots##player##player2## w/e or doing things from the lobby , whatever ur comfy with. 
 // trade peices, buy and sell items, 
 
 // talk about stuff and strategies, 
