@@ -74,3 +74,6 @@ but mud is beatable demo kind of  2d is beatable but longer harder even , and th
 
 
 tsotshtml is mostly played with tactics plugin but minigame functions with rpg menu <3 
+
+
+also (place from purchas ALL The rmmv blocks availed duh ! . and u know... multiplayer... )) minecraft _+ tactics 2d mychara setup 
