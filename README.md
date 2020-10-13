@@ -77,3 +77,8 @@ tsotshtml is mostly played with tactics plugin but minigame functions with rpg m
 
 
 also (place from purchas ALL The rmmv blocks availed duh ! . and u know... multiplayer... )) minecraft _+ tactics 2d mychara setup 
+
+
+we will have many dungeons littered thru the story mode they are procjen with enemies and will be like moonlighter however that works lol cept 
+items u get are real and actually tradeable
+proc gen expanse levels will just be dumps of dungeons but w/o enemies
