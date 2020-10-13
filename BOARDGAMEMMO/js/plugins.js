@@ -3,7 +3,7 @@
 var $plugins =
 [
 {"name":"Smart Path (MV)","status":true,"description":"Allows events or players to do smart Pathfinding","parameters":{}},
-{"name":"TSOTSrpg_managers","status":true,"description":"","parameters":{}},
+{"name":"TSOTSrpg_managers","status":false,"description":"","parameters":{}},
 {"name":"TSOTSrpg_objects","status":true,"description":"","parameters":{}},
 {"name":"TSOTSrpg_scenes","status":true,"description":"","parameters":{}},
 {"name":"TSOTSrpg_sprites","status":true,"description":"","parameters":{}},
