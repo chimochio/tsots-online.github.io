@@ -1,5 +1,10 @@
 tsots todo 
 
+(there is a WOW battle system 2 go with alpha (WORKS SAW IT SOMEHOW)
+but can still do the other 2 battle systems on certain maps or w/e who cares.so that seems fun....
+were gonna buildoutnalpha first and addd 2 that cuz it works,probablyon postgres mongo w/e heroku.
+and thats the plan 4 this otherwise.but pls do other coin andschol.
+
 hooking into mongodb is good 2 . ppl may have made a cool MMO for MV on heroku. 
 anyways u can have ppl make their own herokus for ur code really ez. so..... 
 we might have ppl doing a bunch of that cloud noding. nodejs postgres mongodb... 
